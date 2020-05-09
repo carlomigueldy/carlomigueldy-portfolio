@@ -18,7 +18,12 @@
           </v-card-title>
           <v-list>
             <v-list-item v-for="(item, i) in tools" :key="i">
-              <v-list-item-title v-text="item.title"></v-list-item-title>
+              <v-list-item-action>
+                <v-icon v-text="item.icon"></v-icon>
+              </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title v-text="item.title"></v-list-item-title>
+              </v-list-item-content>
             </v-list-item>
           </v-list>
         </v-card>
@@ -33,13 +38,18 @@
           height="100%">
           <v-card-title>
             <v-row justify="center">
-              <v-icon left>mdi-language-javascript</v-icon>
+              <v-icon left>mdi-code-braces</v-icon>
               <div>Languages</div>
             </v-row>
           </v-card-title>
           <v-list>
             <v-list-item v-for="(item, i) in languages" :key="i">
-              <v-list-item-title v-text="item.title"></v-list-item-title>
+              <v-list-item-action>
+                <v-icon v-text="item.icon"></v-icon>
+              </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title v-text="item.title"></v-list-item-title>
+              </v-list-item-content>
             </v-list-item>
           </v-list>
         </v-card>
@@ -60,7 +70,12 @@
           </v-card-title>
           <v-list>
             <v-list-item v-for="(item, i) in frameworks" :key="i">
-              <v-list-item-title v-text="item.title"></v-list-item-title>
+              <v-list-item-action>
+                <v-icon v-text="item.icon"></v-icon>
+              </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title v-text="item.title"></v-list-item-title>
+              </v-list-item-content>
             </v-list-item>
           </v-list>
         </v-card>
@@ -81,54 +96,69 @@ export default {
     tools: [
       {
         title: 'Visual Studio Code',
+        icon: 'mdi-microsoft-visual-studio-code',
       },
       {
         title: 'Nginx / Apache2',
+        icon: 'mdi-server',
       },
       {
         title: 'Git',
+        icon: 'mdi-git',
       },
       {
         title: 'Bash',
+        icon: 'mdi-bash',
       },
       {
         title: 'Linux',
+        icon: 'mdi-linux',
       },
     ],
 
     languages: [
       {
         title: 'JavaScript',
+        icon: 'mdi-language-javascript',
       },
       {
         title: 'TypeScript',
+        icon: 'mdi-language-typescript',
       },
       {
         title: 'Java',
+        icon: 'mdi-language-java',
       },
       {
         title: 'Python',
+        icon: 'mdi-language-python',
       },
       {
         title: 'PHP',
+        icon: 'mdi-language-php',
       },
     ],
 
     frameworks: [
       {
         title: 'Laravel',
+        icon: 'mdi-laravel',
       },
       {
         title: 'Vue',
+        icon: 'mdi-vuejs',
       },
       {
         title: 'Nuxt',
+        icon: 'mdi-nuxt',
       },
       {
         title: 'Vuetify',
+        icon: 'mdi-vuetify',
       },
       {
         title: 'Angular',
+        icon: 'mdi-angular',
       },
     ]
   })
