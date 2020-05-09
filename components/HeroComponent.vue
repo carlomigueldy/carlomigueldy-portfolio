@@ -1,7 +1,7 @@
 <template>
   <v-card 
     :color="backgroundColor"
-    height="100vh"
+    :height="height"
     flat
     tile>
     <v-container 
@@ -27,6 +27,11 @@ export default {
     backgroundColor: {
       type: String,
       default: () => 'transparent'
+    },
+
+    height: {
+      type: String,
+      default: () => '100vh'
     },
 
     lg: {
