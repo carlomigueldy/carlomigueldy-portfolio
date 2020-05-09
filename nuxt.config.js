@@ -87,5 +87,9 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+
+  workbox: {
+    offline: true
   }
 }
