@@ -22,7 +22,7 @@
             ></v-card-text>
             <v-card-text>
               <v-chip 
-                class="mr-1"
+                class="mr-1 mb-1"
                 :key="i"
                 v-for="(tech, i) in item.tech_used">
                 {{ tech.name }}
