@@ -23,18 +23,25 @@
           <v-col>
             <section class="text-center">
               <div class="carlomigueldy">{ Dy }</div>
-              <div class="text-center subtitle-2">
-                <p>
-                  <div>I am a full stack developer based in the Philippines,</div>
-                  <div>primarily using Laravel for building APIs and </div>
-                  <div>Nuxt js for the frontend.</div>
-                </p>
+              <div class="text-center">
+                <div class="display-1 mb-5">
+                  <typewriter
+                    :speed="80"
+                    :full-erase="true"
+                    :interval="1000"
+                    :repeat="true"
+                    :words="[
+                      'I am a full stack developer based in the Philippines',
+                      'primarily using Laravel for building APIs',
+                      'and Nuxt js for the frontend'
+                    ]">
+                  </typewriter>
+                </div>
                 <v-btn 
-                  large 
-                  rounded
-                  color="deep-purple darken-4"
+                  x-large 
+                  color="primary"
                   @click="$vuetify.goTo('#projects')">
-                  See Projects
+                  Projects
                   <v-icon right>mdi-chevron-down</v-icon>
                 </v-btn>
               </div>
@@ -45,7 +52,23 @@
     </v-img>
 
     <hero-component id="projects">
-      Hello World
+      Projects
+    </hero-component>
+
+    <hero-component id="skills">
+      Skills
+    </hero-component>
+
+    <hero-component id="about">
+      About
+    </hero-component>
+
+    <hero-component id="contact">
+      Contact
+    </hero-component>
+
+    <hero-component id="links">
+      Links
     </hero-component>
   </div>
 </template>
