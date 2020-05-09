@@ -1,16 +1,16 @@
 <template>
   <div>
-    <LandingComponent />
+    <LandingComponent id="landing" />
 
-    <ProjectComponent />
+    <ProjectComponent id="projects" />
 
-    <SkillComponent />
+    <SkillComponent id="skills" />
 
-    <AboutComponent />
+    <AboutComponent id="about" />
 
-    <ContactComponent />
+    <ContactComponent id="contact" />
 
-    <LinkComponent />
+    <LinkComponent id="links" />
   </div>
 </template>
 

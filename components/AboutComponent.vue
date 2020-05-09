@@ -2,8 +2,8 @@
   <div>
     <hero-component 
       background-color="primary" 
-      height="100%" 
-      id="about">
+      height="100%">
+      <h1 class="text-center mb-10">About Me</h1>
       <v-row>
         <v-col 
           lg="3"

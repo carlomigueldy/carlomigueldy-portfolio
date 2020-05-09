@@ -1,5 +1,6 @@
 <template>
-  <hero-component height="100%" id="skills">
+  <hero-component height="100%">
+    <h1 class="text-center mb-10">Skills</h1>
     <v-row>
       <v-col
         lg="4"

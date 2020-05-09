@@ -16,7 +16,7 @@
           ></v-progress-circular>
         </v-row>
       </template>
-      <hero-component id="landing" class="text-center">
+      <hero-component class="text-center">
         <v-row 
           justify="center"
           align="center">

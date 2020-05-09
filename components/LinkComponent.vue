@@ -2,11 +2,15 @@
   <div>
     <hero-component 
       background-color="primary" 
-      height="50vh" 
-      id="links">
+      height="50vh">
       <div class="text-center">
-        <div class="headline mb-10">
-          by <b>Carlo Miguel Dy</b>
+        <div class="mb-10">
+          <span class="headline">
+            by <b>Carlo Miguel Dy</b>
+          </span>
+          <div>
+            <small>{{ '(C) ' + new Date().getFullYear() }}. All rights reserved.</small>
+          </div>
         </div>
         <v-btn 
           href="https://github.com/carlomigueldy"

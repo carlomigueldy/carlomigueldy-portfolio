@@ -1,8 +1,7 @@
 <template>
   <div>
     <hero-component 
-      height="50vh" 
-      id="contact">
+      height="50vh">
       <div class="text-center">
         <div>
           You can contact me at
