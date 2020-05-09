@@ -1,19 +1,47 @@
 <template>
   <div>
-    <hero-component background-color="primary" height="30vh" id="links">
+    <hero-component 
+      background-color="primary" 
+      height="50vh" 
+      id="links">
       <div class="text-center">
-        <div class="headline">Follow Me</div>
-        <v-btn depressed fab>
-          <v-icon>mdi-github</v-icon>
+        <div class="headline mb-10">
+          by <b>Carlo Miguel Dy</b>
+        </div>
+        <v-btn 
+          href="https://github.com/carlomigueldy"
+          target="_blank"
+          depressed 
+          fab>
+          <v-icon large>mdi-github</v-icon>
         </v-btn>
-        <v-btn depressed fab>
-          <v-icon>mdi-linkedin</v-icon>
+        <v-btn 
+          href="https://www.linkedin.com/in/carlo-miguel-dy-168797181/"
+          target="_blank"
+          depressed 
+          fab>
+          <v-icon large>mdi-linkedin</v-icon>
         </v-btn>
-        <v-btn depressed fab>
-          <v-icon>mdi-twitter</v-icon>
+        <v-btn 
+          href="https://www.instagram.com/carlomigueldy/"
+          target="_blank"
+          depressed 
+          fab>
+          <v-icon large>mdi-instagram</v-icon>
         </v-btn>
-        <v-btn depressed fab>
-          <v-icon>mdi-facebook</v-icon>
+        <v-btn 
+          href="https://twitter.com/CarloMiguelDy"
+          target="_blank"
+          depressed 
+          fab>
+          <v-icon large>mdi-twitter</v-icon>
+        </v-btn>
+        <v-btn 
+          href="https://www.facebook.com/polarixdy"
+          target="_blank"
+          depressed 
+          fab>
+          <v-icon large>mdi-facebook</v-icon>
         </v-btn>
       </div>
     </hero-component>
