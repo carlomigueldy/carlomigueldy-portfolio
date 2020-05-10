@@ -61,8 +61,8 @@ export default {
         color: "blue",
         date: "April 2020",
         demo_available: true,
-        link: "#",
-        description: "A custom tailored Customer Relationship Management System on a decoupled architecture built with Laravel 6 as the API and Nuxt js with Vuetify on the frontend.",
+        link: "https://fpv-crm.netlify.app/",
+        description: "A custom tailored CRM System on a decoupled architecture built with Laravel 6 as the API and Nuxt js with Vuetify on the frontend.",
         tech_used: [
           {
             name: "Laravel",
