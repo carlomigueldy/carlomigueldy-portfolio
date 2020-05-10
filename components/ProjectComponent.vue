@@ -81,8 +81,8 @@ export default {
             icon: "mdi-vuetify"
           },
           {
-            name: "Leaflet",
-            icon: "mdi-leaf"
+            name: "Google Maps",
+            icon: "mdi-google-maps"
           }
         ]
       },
