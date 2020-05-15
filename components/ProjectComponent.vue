@@ -4,7 +4,8 @@
       background-color="primary" 
       height="100%">
       <h1 class="text-center mb-10">Projects</h1>
-      <v-timeline>
+      <v-timeline
+        :dense="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs">
         <v-timeline-item
           v-for="(item, i) in projects"
           :color="item.color"
@@ -23,6 +24,7 @@
             <v-card-text>
               <v-chip 
                 class="mr-1 mb-1"
+                label
                 :key="i"
                 v-for="(tech, i) in item.tech_used">
                 {{ tech.name }}
@@ -36,6 +38,70 @@
           </v-card>
         </v-timeline-item>
       </v-timeline>
+      <div class="text-center">
+        <v-dialog 
+          v-model="seeMoreDialog"
+          scrollable 
+          max-width="1000">
+          <template v-slot:activator="{ on }">
+            <v-btn 
+              v-on="on"
+              width="250" 
+              x-large>
+              See More
+            </v-btn>
+          </template>
+          <v-card>
+            <v-card-title>
+              More projects I built
+              <v-spacer></v-spacer>
+              <v-btn 
+                @click="seeMoreDialog = !seeMoreDialog"
+                icon>
+                <v-icon>mdi-close</v-icon>
+              </v-btn>
+            </v-card-title>
+            <v-divider></v-divider>
+            <v-card-text>
+              <v-timeline
+                :dense="$vuetify.breakpoint.sm || $vuetify.breakpoint.xs">
+                <v-timeline-item
+                  v-for="(item, i) in small_projects"
+                  :color="item.color"
+                  :key="i"
+                  small>
+                  <v-card 
+                    color="primary"
+                    @click="goTo(item.link)" 
+                    class="elevation-2">
+                    <v-card-title 
+                      class="headline"
+                      v-text="item.title"
+                    ></v-card-title>
+                    <v-card-text
+                      v-text="item.description"
+                    ></v-card-text>
+                    <v-card-text>
+                      <v-chip 
+                        class="mr-1 mb-1"
+                        label
+                        :key="i"
+                        v-for="(tech, i) in item.tech_used">
+                        {{ tech.name }}
+                        <v-icon 
+                          small 
+                          right 
+                          v-text="tech.icon"
+                        ></v-icon>
+                      </v-chip>
+                    </v-card-text>
+                  </v-card>
+                </v-timeline-item>
+              </v-timeline>
+            </v-card-text>
+          </v-card>
+        </v-dialog>
+      </div>
     </hero-component>
   </div>
 </template>
@@ -55,6 +121,8 @@ export default {
   },
 
   data: () => ({
+    seeMoreDialog: false,
+    
     projects: [
       {
         title: "CRM",
@@ -62,7 +130,7 @@ export default {
         date: "April 2020",
         demo_available: true,
         link: "https://fpv-crm.netlify.app/",
-        description: "A custom tailored CRM System on a decoupled architecture built with Laravel 6 as the API and Nuxt js with Vuetify on the frontend.",
+        description: "A custom tailored CRM System on a decoupled architecture built with Laravel 6 as the API and Nuxt js with Vuetify on the frontend. The project has features like Payroll System, Clock-in & Clock-out System, Order System, Invoicing System, User Management System, Email Templating System, & a unique Reporting System.",
         tech_used: [
           {
             name: "Laravel",
@@ -113,7 +181,9 @@ export default {
           }
         ]
       },
+    ],
 
+    small_projects: [
       {
         title: "Cleaner Marawi",
         color: "green",

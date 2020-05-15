@@ -5,8 +5,11 @@
       height="50vh">
       <div class="text-center">
         <div class="mb-10">
-          <span class="headline">
-            by <b>Carlo Miguel Dy</b>
+          <span>
+            Built and designed with <a href="https://vuetifyjs.com/en/" class="white--text" target="_blank">Vuetify</a>
+            <div @click="$vuetify.goTo('#about')" class="headline" style="cursor: pointer">
+              by <b>Carlo Miguel Dy</b>
+            </div>
           </span>
           <div>
             <small>{{ '(C) ' + new Date().getFullYear() }}. All rights reserved.</small>

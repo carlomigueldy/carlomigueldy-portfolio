@@ -1,6 +1,6 @@
 <template>
   <hero-component height="100%">
-    <h1 class="text-center mb-10">Skills</h1>
+    <h1 class="text-center mb-10">Here is my stack</h1>
     <v-row>
       <v-col
         lg="4"
@@ -118,6 +118,10 @@ export default {
 
     languages: [
       {
+        title: 'PHP',
+        icon: 'mdi-language-php',
+      },
+      {
         title: 'JavaScript',
         icon: 'mdi-language-javascript',
       },
@@ -132,10 +136,6 @@ export default {
       {
         title: 'Python',
         icon: 'mdi-language-python',
-      },
-      {
-        title: 'PHP',
-        icon: 'mdi-language-php',
       },
     ],
 
