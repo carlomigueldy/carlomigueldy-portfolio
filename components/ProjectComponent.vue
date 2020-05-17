@@ -217,6 +217,34 @@ export default {
 
     small_projects: [
       {
+        title: "CaliShop",
+        color: "blue",
+        date: "On-Going",
+        demo_available: true,
+        img: "/img/calishop/laptop.png",
+        link: "https://calishop.netlify.app/",
+        description: "A side project. It is a simple e-commerce application with a shopping cart system and a payment gateway.",
+        tech_used: [
+          {
+            name: "Laravel",
+            icon: "mdi-laravel"
+          },
+          {
+            name: "Nuxt js",
+            icon: "mdi-nuxt"
+          },
+          {
+            name: "Vue js",
+            icon: "mdi-vuejs"
+          },
+          {
+            name: "Vuetify",
+            icon: "mdi-vuetify"
+          },
+        ]
+      },
+      
+      {
         title: "Cleaner Marawi",
         color: "green",
         date: "October 2019",
