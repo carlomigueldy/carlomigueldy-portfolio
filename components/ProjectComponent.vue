@@ -36,6 +36,23 @@
             <v-card-text
               v-text="item.description"
             ></v-card-text>
+            <v-card-text v-if="item.demo_credentials">
+              <v-card-title>Demo Credentials</v-card-title>
+              <v-list>
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-title v-text="item.demo_credentials.email"></v-list-item-title>
+                    <v-list-item-subtitle>Email Address</v-list-item-subtitle>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-title v-text="item.demo_credentials.password"></v-list-item-title>
+                    <v-list-item-subtitle>Password</v-list-item-subtitle>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+            </v-card-text>
             <v-card-text>
               <v-chip 
                 class="mr-1 mb-1"
@@ -108,9 +125,29 @@
                       class="headline"
                       v-text="item.title"
                     ></v-card-title>
+                    <v-card-subtitle
+                      v-text="item.date"
+                    ></v-card-subtitle>
                     <v-card-text
                       v-text="item.description"
                     ></v-card-text>
+                    <v-card-text v-if="item.demo_credentials">
+                      <v-card-title>Demo Credentials</v-card-title>
+                      <v-list>
+                        <v-list-item>
+                          <v-list-item-content>
+                            <v-list-item-title v-text="item.demo_credentials.email"></v-list-item-title>
+                            <v-list-item-subtitle>Email Address</v-list-item-subtitle>
+                          </v-list-item-content>
+                        </v-list-item>
+                        <v-list-item>
+                          <v-list-item-content>
+                            <v-list-item-title v-text="item.demo_credentials.password"></v-list-item-title>
+                            <v-list-item-subtitle>Password</v-list-item-subtitle>
+                          </v-list-item-content>
+                        </v-list-item>
+                      </v-list>
+                    </v-card-text>
                     <v-card-text>
                       <v-chip 
                         class="mr-1 mb-1"
@@ -159,6 +196,10 @@ export default {
         color: "blue",
         date: "April 2020",
         demo_available: true,
+        demo_credentials: {
+          email: 'admin@admin.com',
+          password: 'password'
+        },
         img: "/img/fpv-crm/laptop.png",
         link: "https://fpv-crm.netlify.app/",
         description: "A custom tailored CRM System on a decoupled architecture built with Laravel 6 as the API and Nuxt js with Vuetify on the frontend. The project has features like Payroll System, Clock-in & Clock-out System, Order System, Invoicing System, User Management System, Email Templating System, & a unique Reporting System.",
@@ -191,6 +232,10 @@ export default {
         color: "red",
         date: "November 2019",
         demo_available: true,
+        demo_credentials: {
+          email: 'admin@admin.com',
+          password: 'password'
+        },
         img: "/img/ethnogis/laptop.png",
         link: "http://ethnogis.herokuapp.com/",
         description: "An undergraduate Capstone project, a web-based application that focuses on displaying data-driven interactive maps. It delivers data management for maintaining information, provides data visualizations using interactive driven maps and the utilization of charts of the Indigenous Groups in Northern Mindanao (Region X), Philippines. IndiGIS is built with Laravel, Vue js, Vuetify and Leaflet js. And it also integrates with the Progressive Web Application (PWA) built on Vuetify and Vue js to achieve offline data gathering capabilities.",
@@ -217,10 +262,50 @@ export default {
 
     small_projects: [
       {
-        title: "CaliShop",
-        color: "blue",
+        title: "Daycare App",
+        color: "cyan",
         date: "On-Going",
         demo_available: true,
+        demo_credentials: {
+          email: 'admin@admin.com',
+          password: 'password'
+        },
+        img: "/img/daycare/laptop.png",
+        link: "https://childcare-web.netlify.app/",
+        description: "A daycare management software that manages daycare facilities, parents, children and employees. Capable of recording child details in a timeline and has a payment system for tracking payments within the week based on parents weekly rates.",
+        tech_used: [
+          {
+            name: "Laravel",
+            icon: "mdi-laravel"
+          },
+          {
+            name: "Nuxt js",
+            icon: "mdi-nuxt"
+          },
+          {
+            name: "Vue js",
+            icon: "mdi-vuejs"
+          },
+          {
+            name: "Vuetify",
+            icon: "mdi-vuetify"
+          },
+          {
+            name: "Framework7",
+            icon: "mdi-language-javascript"
+          }
+        ]
+      },
+      
+      {
+        title: "CaliShop",
+        color: "blue",
+        date: "April 2020",
+        demo_available: true,
+        demo_credentials: {
+          email: 'admin@admin.com',
+          password: 'password'
+        },
         img: "/img/calishop/laptop.png",
         link: "https://calishop.netlify.app/",
         description: "A side project. It is a simple e-commerce application with a shopping cart system and a payment gateway.",
