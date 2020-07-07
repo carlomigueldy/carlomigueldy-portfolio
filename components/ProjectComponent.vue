@@ -192,6 +192,42 @@ export default {
     
     projects: [
       {
+        title: "Daycare App",
+        color: "cyan",
+        date: "July 2020",
+        demo_available: true,
+        demo_credentials: {
+          email: 'admin@admin.com',
+          password: 'password'
+        },
+        img: "/img/daycare/laptop.png",
+        link: "https://childcare-web.vercel.app/",
+        description: "A daycare management software that manages daycare facilities, parents, children and employees. Capable of recording child details in a timeline and has a payment system for tracking payments within the week based on parents weekly rates.",
+        tech_used: [
+          {
+            name: "Laravel",
+            icon: "mdi-laravel"
+          },
+          {
+            name: "Nuxt js",
+            icon: "mdi-nuxt"
+          },
+          {
+            name: "Vue js",
+            icon: "mdi-vuejs"
+          },
+          {
+            name: "Vuetify",
+            icon: "mdi-vuetify"
+          },
+          {
+            name: "Framework7",
+            icon: "mdi-language-javascript"
+          }
+        ]
+      },
+      
+      {
         title: "CRM",
         color: "blue",
         date: "April 2020",
@@ -261,42 +297,6 @@ export default {
     ],
 
     small_projects: [
-      {
-        title: "Daycare App",
-        color: "cyan",
-        date: "On-Going",
-        demo_available: true,
-        demo_credentials: {
-          email: 'admin@admin.com',
-          password: 'password'
-        },
-        img: "/img/daycare/laptop.png",
-        link: "https://childcare-web.netlify.app/",
-        description: "A daycare management software that manages daycare facilities, parents, children and employees. Capable of recording child details in a timeline and has a payment system for tracking payments within the week based on parents weekly rates.",
-        tech_used: [
-          {
-            name: "Laravel",
-            icon: "mdi-laravel"
-          },
-          {
-            name: "Nuxt js",
-            icon: "mdi-nuxt"
-          },
-          {
-            name: "Vue js",
-            icon: "mdi-vuejs"
-          },
-          {
-            name: "Vuetify",
-            icon: "mdi-vuetify"
-          },
-          {
-            name: "Framework7",
-            icon: "mdi-language-javascript"
-          }
-        ]
-      },
-      
       {
         title: "CaliShop",
         color: "blue",
