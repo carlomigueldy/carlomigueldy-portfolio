@@ -130,8 +130,8 @@ export default {
         icon: 'mdi-language-typescript',
       },
       {
-        title: 'Java',
-        icon: 'mdi-language-java',
+        title: 'Dart',
+        icon: 'mdi-code-braces',
       },
       {
         title: 'Python',
@@ -153,8 +153,8 @@ export default {
         icon: 'mdi-nuxt',
       },
       {
-        title: 'Vuetify',
-        icon: 'mdi-vuetify',
+        title: 'Flutter',
+        icon: 'mdi-cellphone',
       },
       {
         title: 'Angular',
