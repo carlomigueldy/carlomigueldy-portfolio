@@ -2,14 +2,8 @@
   <hero-component height="100%">
     <h1 class="text-center mb-10">Here is my stack</h1>
     <v-row>
-      <v-col
-        lg="4"
-        md="4"
-        sm="12"
-        cols="12">
-        <v-card 
-          min-height="25rem" 
-          height="100%">
+      <v-col lg="4" md="4" sm="12" cols="12">
+        <v-card min-height="25rem" height="100%">
           <v-card-title>
             <v-row justify="center">
               <v-icon left>mdi-tools</v-icon>
@@ -28,14 +22,8 @@
           </v-list>
         </v-card>
       </v-col>
-      <v-col
-        lg="4"
-        md="4"
-        sm="12"
-        cols="12">
-        <v-card 
-          min-height="25rem" 
-          height="100%">
+      <v-col lg="4" md="4" sm="12" cols="12">
+        <v-card min-height="25rem" height="100%">
           <v-card-title>
             <v-row justify="center">
               <v-icon left>mdi-code-braces</v-icon>
@@ -54,14 +42,8 @@
           </v-list>
         </v-card>
       </v-col>
-      <v-col
-        lg="4"
-        md="4"
-        sm="12"
-        cols="12">
-        <v-card 
-          min-height="25rem" 
-          height="100%">
+      <v-col lg="4" md="4" sm="12" cols="12">
+        <v-card min-height="25rem" height="100%">
           <v-card-title>
             <v-row justify="center">
               <v-icon left>mdi-nuxt</v-icon>
@@ -85,7 +67,7 @@
 </template>
 
 <script>
-import HeroComponent from '@/components/HeroComponent'
+import HeroComponent from "@/components/HeroComponent";
 
 export default {
   components: {
@@ -95,72 +77,76 @@ export default {
   data: () => ({
     tools: [
       {
-        title: 'Visual Studio Code',
-        icon: 'mdi-microsoft-visual-studio-code',
+        title: "Visual Studio Code",
+        icon: "mdi-microsoft-visual-studio-code",
       },
       {
-        title: 'Nginx / Apache2',
-        icon: 'mdi-server',
+        title: "Nginx / Apache2",
+        icon: "mdi-server",
       },
       {
-        title: 'Git',
-        icon: 'mdi-git',
+        title: "Git",
+        icon: "mdi-git",
       },
       {
-        title: 'Bash',
-        icon: 'mdi-bash',
+        title: "Bash",
+        icon: "mdi-bash",
       },
       {
-        title: 'Linux',
-        icon: 'mdi-linux',
+        title: "Linux",
+        icon: "mdi-linux",
       },
     ],
 
     languages: [
       {
-        title: 'PHP',
-        icon: 'mdi-language-php',
+        title: "PHP",
+        icon: "mdi-language-php",
       },
       {
-        title: 'JavaScript',
-        icon: 'mdi-language-javascript',
+        title: "JavaScript",
+        icon: "mdi-language-javascript",
       },
       {
-        title: 'TypeScript',
-        icon: 'mdi-language-typescript',
+        title: "TypeScript",
+        icon: "mdi-language-typescript",
       },
       {
-        title: 'Dart',
-        icon: 'mdi-code-braces',
+        title: "Dart",
+        icon: "mdi-code-braces",
       },
       {
-        title: 'Python',
-        icon: 'mdi-language-python',
+        title: "Python",
+        icon: "mdi-language-python",
       },
     ],
 
     frameworks: [
       {
-        title: 'Laravel',
-        icon: 'mdi-laravel',
+        title: "Laravel",
+        icon: "mdi-laravel",
       },
       {
-        title: 'Vue',
-        icon: 'mdi-vuejs',
+        title: "Vue",
+        icon: "mdi-vuejs",
       },
       {
-        title: 'Nuxt',
-        icon: 'mdi-nuxt',
+        title: "Angular",
+        icon: "mdi-angular",
       },
       {
-        title: 'Flutter',
-        icon: 'mdi-cellphone',
+        title: "React",
+        icon: "mdi-react",
       },
       {
-        title: 'Angular',
-        icon: 'mdi-angular',
+        title: "Nuxt",
+        icon: "mdi-nuxt",
       },
-    ]
-  })
-}
+      {
+        title: "Flutter",
+        icon: "mdi-cellphone",
+      },
+    ],
+  }),
+};
 </script>
