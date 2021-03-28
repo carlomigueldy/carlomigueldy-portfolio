@@ -1,25 +1,21 @@
 {
-  "name": "carlomigueldy",
+  "name": "carlomigueldy-portfolio",
   "version": "1.0.0",
-  "description": "My portfolio website using Nuxt js with Vuetify",
-  "author": "Carlo Miguel Dy",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "deploy": "gh-pages -d dist"
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "^2.0.0",
-    "vue-typewriter": "^2.2.1"
+    "@nuxtjs/pwa": "^3.3.5",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.0.0",
-    "gh-pages": "^2.2.0"
+    "@nuxt/types": "^2.15.3",
+    "@nuxt/typescript-build": "^2.1.0",
+    "nuxt-windicss": "^0.4.4"
   }
 }

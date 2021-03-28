@@ -1,6 +1,4 @@
-# carlomigueldy
-
-> My portfolio website using Nuxt js with Vuetify
+# carlomigueldy-portfolio
 
 ## Build Setup
 

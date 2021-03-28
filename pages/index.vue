@@ -1,57 +1,75 @@
 <template>
-  <div>
-    <LandingComponent id="landing" />
-
-    <ProjectComponent id="projects" />
-
-    <SkillComponent id="skills" />
-
-    <AboutComponent id="about" />
-
-    <ContactComponent id="contact" />
-
-    <LinkComponent id="links" />
+  <div class="container">
+    <div>
+      <Logo />
+      <h1 class="title">
+        carlomigueldy-portfolio
+      </h1>
+      <div class="links">
+        <a
+          href="https://nuxtjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--green"
+        >
+          Documentation
+        </a>
+        <a
+          href="https://github.com/nuxt/nuxt.js"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-import LandingComponent from '@/components/LandingComponent'
-import SkillComponent from '@/components/SkillComponent'
-import ContactComponent from '@/components/ContactComponent'
-import ProjectComponent from '@/components/ProjectComponent'
-import AboutComponent from '@/components/AboutComponent'
-import LinkComponent from '@/components/LinkComponent'
+<script lang="ts">
+import Vue from 'vue'
 
-export default {
-  components: {
-    LandingComponent,
-    SkillComponent,
-    ContactComponent,
-    ProjectComponent,
-    AboutComponent,
-    LinkComponent
-  },
-}
+export default Vue.extend({})
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-.carlomigueldy {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 15vh;
+.title {
+  font-family:
+    'Quicksand',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  display: block;
   font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
 }
 
-.mx-20 {
-  margin-left: 14rem;
-  margin-right: 14rem;
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
 }
 
-.parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.links {
+  padding-top: 15px;
 }
 </style>
