@@ -2,12 +2,21 @@
   <v-app app>
     <v-app-bar :color="$vuetify.theme.dark ? '#022c43' : 'white'" app flat>
       <v-toolbar-title>
-        Dy
+        <span
+          @click="
+            $route.name !== 'index' ? $router.replace({ name: 'index' }) : null
+          "
+          style="cursor:pointer"
+        >
+          { Dy }
+        </span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <div>
-        <v-btn text x-large>Blog</v-btn>
-        <v-btn text x-large>Projects</v-btn>
+        <v-btn @click="$router.push({ name: 'blog' })" text x-large>Blog</v-btn>
+        <v-btn @click="$router.push({ name: 'projects' })" text x-large>
+          Projects
+        </v-btn>
         <v-btn
           v-if="
             $vuetify.breakpoint.md ||
@@ -71,7 +80,7 @@
       :style="{
         'background-color': $vuetify.theme.dark ? '#022c43' : 'transparent'
       }"
-      class="my-10"
+      class="mt-10"
     >
       <v-container fill-height>
         <v-row justify="center" align="start" style="height: 100%;">
@@ -125,7 +134,7 @@
       </v-container>
     </v-main>
 
-    <v-footer :color="$vuetify.theme.dark ? '#022c43' : 'white'" app>
+    <v-footer :color="$vuetify.theme.dark ? '#022c43' : 'white'">
       <v-container>
         <div class="text-center">
           Made with ❤️ by Carlo Miguel Dy
